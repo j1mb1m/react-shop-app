@@ -1,0 +1,76 @@
+/* ----------- Page Catalog: Card ------------*/
+
+.card {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    img:first-child {
+        width: 310px;
+        height: 360px;
+        margin-bottom: 15px;
+    }
+
+    .like {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    span {
+        margin-left: 10px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #E0BEA2;
+    }
+
+    .price {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #252525;
+    }
+
+    .title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #252525;
+    }
+
+    .size {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(37, 37, 37, 0.5);
+    }
+}
+
+.card:hover {
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
