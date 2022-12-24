@@ -49,7 +49,7 @@ function MyCarousel() {
       <div className={styles.right} onClick={onRight} id = "btnRight"></div>
       <div className={styles.wrap} id="wrap1">
         {
-          categories.map(category=> <CategoryCard image={category.image} title={category.name} />)
+          categories.map((category, index)=> <CategoryCard key={index} image={category.image} title={category.name} />)
         }
       </div>
     </div>

@@ -19,7 +19,7 @@ function Catalog() {
 
   const addToSizeFilter = (size) => {
 
-    if (sizeFilter.length == 0) {
+    if (sizeFilter.length === 0) {
       setSizeFilter([size]);
     }
     else if (!sizeFilter.includes(size)) {
@@ -29,7 +29,7 @@ function Catalog() {
 
   const addToColorFilter = (color) => {
 
-    if (colorFilter.length == 0) {
+    if (colorFilter.length === 0) {
       setColorFilter([color]);
     }
     else if (!colorFilter.includes(color)) {
@@ -134,7 +134,8 @@ function Catalog() {
                         height: "14px",
                         border: "0.3px solid #252525",
                         marginRight: "5px",
-                        borderRadius: "50%"
+                        borderRadius: "50%",
+                        float: "left"
                       }}></div>
                       Белый
                     </li>
@@ -145,7 +146,8 @@ function Catalog() {
                         height: "14px",
                         border: "0.3px solid #252525",
                         marginRight: "5px",
-                        borderRadius: "50%"
+                        borderRadius: "50%",
+                        float: "left"
                       }}></div>Сиреневый</li>
                     <li onClick={() => addToColorFilter("#F1DDAA")}>
                       <div style={{
@@ -154,7 +156,8 @@ function Catalog() {
                         height: "14px",
                         border: "0.3px solid #252525",
                         marginRight: "5px",
-                        borderRadius: "50%"
+                        borderRadius: "50%",
+                        float: "left"
                       }}></div>Песочный</li>
                     <li onClick={() => addToColorFilter("red")}>
                       <div style={{
@@ -163,17 +166,26 @@ function Catalog() {
                         height: "14px",
                         border: "0.3px solid #252525",
                         marginRight: "5px",
-                        borderRadius: "50%"
+                        borderRadius: "50%",
+                        float: "left"
                       }}></div>
                       Красный</li>
                   </ul>
                 </div>
               </li>
-              <li><FormattedMessage id='price' />
-                <img className="drift colored_drift" src="img/drift_header.svg" alt="Logo" />
+              <li className="dropbox">
+                <div>
+                  <span><FormattedMessage id='price' />
+                    <img className="drift colored_drift" src="img/drift_header.svg" alt="Logo" />
+                  </span>
+                </div>
               </li>
-              <li><FormattedMessage id='sort_by' />
-                <img className="drift colored_drift" src="img/drift_header.svg" alt="Logo" />
+              <li className="dropbox">
+              <div>
+                  <span><FormattedMessage id='sort_by' />
+                    <img className="drift colored_drift" src="img/drift_header.svg" alt="Logo" />
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
